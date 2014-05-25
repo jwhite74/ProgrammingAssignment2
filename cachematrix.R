@@ -3,6 +3,7 @@
 
 ## Write a short comment describing this function
 ## This function has nothing to do with the lectures for the week.
+## This creates a list function to set/get the value of the vector/matrix
 
 makeCacheMatrix <- function(x = matrix()) {
 	mtrx <- NULL
@@ -20,6 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Write a short comment describing this function
 ## Did I watch the lectures for the right class?
+## This function creates the inverse of the matrix
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
@@ -29,7 +31,7 @@ cacheSolve <- function(x, ...) {
 		return(mtrx)
 	}
 	data <- x$get()
-	mtrx <- mean(data, ...)
+	mtrx <- solve(data, ...)
 	x$setmtrx(mtrx)
 	mtrx
 }
